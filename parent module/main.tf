@@ -14,3 +14,9 @@ module "rgmodule1" {
   resource_group_name = "kk-rg02"
   resource_group_location = "east us"
 }
+
+module "rgmodule2" {
+  source = "../child module/azure_rm_rg"
+  resource_group_name = "kk-rg03"
+  resource_group_location = "east us"
+}
